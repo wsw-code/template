@@ -1,0 +1,26 @@
+{
+    "parserOptions":{
+      "parser": "babel-eslint",
+      "sourceType": "module"
+    },    
+    "extends": ["plugin:vue/recommended"],
+    "plugins": [
+      "vue"
+    ],
+    "rules": {
+      "no-new": "off",
+      "no-unreachable": 1,
+      "no-unused-vars": 1,
+        "vue/html-self-closing": ["error", {
+          "html": {
+            "void": "never",
+            "normal": "never",
+            "component": "never"
+          },
+          "svg": "always",
+          "math": "always"
+        }]     
+    },
+    "env": {"es6":true, "node": true }
+  }
+  

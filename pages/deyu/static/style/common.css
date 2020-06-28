@@ -1,0 +1,296 @@
+.avator {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.uli {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding: 0 30px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .uli {
+    position: relative;
+  }
+  .uli:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1Px;
+    background-color: #EFEFEF;
+    display: block;
+    z-index: 1;
+    transform: scaleY(1);
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .uli {
+    position: relative;
+  }
+  .uli:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1Px;
+    background-color: #EFEFEF;
+    display: block;
+    z-index: 1;
+    transform: scaleY(0.5);
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+  .uli {
+    position: relative;
+  }
+  .uli:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1Px;
+    background-color: #EFEFEF;
+    display: block;
+    z-index: 1;
+    transform: scaleY(0.33);
+  }
+}
+.leftPart {
+  display: flex;
+  align-items: center;
+}
+.leftTxt {
+  margin-left: 20px;
+  color: #666;
+  font-size: 28px;
+}
+.rightPart {
+  display: flex;
+  align-items: center;
+}
+.rightTxt {
+  color: #999999;
+  font-size: 28px;
+  margin-right: 20px;
+}
+.more {
+  width: 17px;
+  height: 26px;
+  margin-top: 4px;
+}
+.leftIcon {
+  width: 50px;
+  height: 50px;
+}
+.blue.rightTxt {
+  color: #35A3DD;
+}
+.red.rightTxt {
+  color: #EB7778;
+}
+.bzpj .textarea {
+  width: 100%;
+  height: 300px;
+  font-size: 28px;
+  line-height: 36px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.bzpj .towho {
+  min-height: 100px;
+  width: 100%;
+  padding: 10px 30px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .bzpj .towho {
+    position: relative;
+  }
+  .bzpj .towho:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1Px;
+    background-color: #ddd;
+    display: block;
+    z-index: 1;
+    transform: scaleY(1);
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .bzpj .towho {
+    position: relative;
+  }
+  .bzpj .towho:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1Px;
+    background-color: #ddd;
+    display: block;
+    z-index: 1;
+    transform: scaleY(0.5);
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+  .bzpj .towho {
+    position: relative;
+  }
+  .bzpj .towho:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1Px;
+    background-color: #ddd;
+    display: block;
+    z-index: 1;
+    transform: scaleY(0.33);
+  }
+}
+.bzpj .towho .toIcon {
+  font-size: 40px;
+  color: #35A3DD;
+  margin-right: 16px;
+}
+.bzpj .towho span {
+  margin-right: 20px;
+}
+.bzpj .towho .whospan {
+  color: #35A3DD;
+}
+.bzpj .toTxt {
+  font-size: 28px;
+  color: #666;
+}
+.bzpj .mx {
+  height: 93px;
+  background-color: #fff;
+  line-height: 93px;
+  padding: 0 30px;
+  font-size: 32px;
+  color: #999;
+}
+.bzpj .pyUl {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30px;
+  padding-top: 30px;
+}
+.bzpj .pyLi {
+  width: 158px;
+  height: 190px;
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 19px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  position: relative;
+  border-radius: 5px;
+}
+.bzpj .pyLi.active:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-radius: 5px;
+  border: 1Px solid #35A3DD;
+}
+.bzpj .pyLi:nth-child(4n) {
+  margin-right: 0;
+}
+.bzpj .pyLi img {
+  width: 80%;
+}
+.bzpj .ryName {
+  text-align: center;
+  font-size: 24px;
+  color: #999;
+}
+.mint-popup {
+  width: 100%;
+}
+.popTitle {
+  padding: 15px;
+}
+.sure {
+  padding: 10px 20px;
+  float: right;
+  font-size: 28px;
+  color: #fff;
+  background-color: #35A3DD;
+  border-radius: 4px;
+}
+.pmList {
+  display: flex;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 32px;
+}
+.pmList li {
+  display: flex;
+  flex: 1;
+  font-size: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.pmList li:before {
+  position: absolute;
+  content: '';
+  right: 0px;
+  top: 10px;
+  width: 1Px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.pmList .pm {
+  font-size: 32px;
+}
+.pmList .score {
+  font-size: 32px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.pfIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+.pfIcon img {
+  width: 120px;
+}
+.pfIcon .txt {
+  font-size: 28px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,226 @@
+
+
+
+
+
+.border (@color,@position,@dw,@ratio:0.5) when (@position="left") {
+    position: @dw;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: auto;
+        right: auto;
+        width: 2Px;
+        height: 100%;
+        border-left:1Px solid @color;
+        display: block;
+        z-index: 1;
+        transform: scaleX(@ratio)
+    }
+}
+
+.border (@color,@position,@dw,@ratio:0.5) when (@position="right") {
+    position: @dw;
+    &:before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: auto;
+        width: 2Px;
+        height: 100%;
+        border-right:1Px solid @color;
+        display: block;
+        z-index: 1;
+        transform: scaleX(@ratio)
+    }
+}
+
+.border (@color,@position,@dw,@ratio:0.5) when (@position="top") {
+    position: @dw;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: auto;
+        right: auto;
+        width: 100%;
+        height: 2Px;
+        border-top:1Px solid @color;
+        display: block;
+        z-index: 1;
+        transform: scaleY(@ratio)
+    }
+}
+
+.border (@color,@position,@dw,@ratio:0.5) when (@position="bottom") {
+    position: @dw;
+    &:before{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2Px;
+        border-bottom:1Px solid @color;
+        display: block;
+        z-index: 1;
+        transform: scaleY(@ratio)
+    }
+}
+
+.bd(@color,@position,@dw: relative) { 
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+      .border(@color,@position,@dw,@ratio:1)
+    }  
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+      .border(@color,@position,@dw,@ratio:0.5)
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+      .border(@color,@position,@dw,@ratio:0.33)
+    }
+}
+
+
+
+.border-radius2(@color,@radius,@ratio){
+            position: relative;
+            &:before{
+                content: "";
+                pointer-events: none; /* 防止点击触发 */
+                box-sizing: border-box;
+                position: absolute;
+                width: 200%;
+                height: 200%;
+                left: 0;
+                top: 0;
+                border-radius: @radius;
+                border:1Px solid @color;
+                transform:scale(@ratio);
+                transform-origin: 0 0;  
+                z-index: 2;               
+            }
+        
+}
+.border-radius3(@color,@radius,@ratio){
+    position: relative;
+    &:before{
+        content: "";
+        pointer-events: none; /* 防止点击触发 */
+        box-sizing: border-box;
+        position: absolute;
+        width: 300%;
+        height: 300%;
+        left: 0;
+        top: 0;
+        border-radius: @radius*1.5;
+        border:1Px solid @color;
+        transform:scale(@ratio);
+        transform-origin: 0 0;    
+        z-index: 2;            
+    }
+
+}
+
+.br(@color,@radius) { 
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        .border-radius2(@color,@radius,@ratio:0.5)
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+        .border-radius3(@color,@radius,@ratio:0.33)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.aborder (@color,@position,@dw,@ratio:0.5) when (@position="left") {
+  position: @dw;
+  &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: auto;
+      right: auto;
+      width: 2Px;
+      height: 100%;
+      border-left:1Px solid @color;
+      display: block;
+      z-index: 1;
+      transform: scaleX(@ratio)
+  }
+}
+
+.aborder (@color,@position,@dw,@ratio:0.5) when (@position="right") {
+  position: @dw;
+  &:after{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: auto;
+      width: 2Px;
+      height: 100%;
+      border-right:1Px solid @color;
+      display: block;
+      z-index: 1;
+      transform: scaleX(@ratio)
+  }
+}
+
+.aborder (@color,@position,@dw,@ratio:0.5) when (@position="top") {
+  position: @dw;
+  &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: auto;
+      right: auto;
+      width: 100%;
+      height: 2Px;
+      border-top:1Px solid @color;
+      display: block;
+      z-index: 1;
+      transform: scaleY(@ratio)
+  }
+}
+
+.aborder (@color,@position,@dw,@ratio:0.5) when (@position="bottom") {
+  position: @dw;
+  &:after{
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2Px;
+      border-bottom:1Px solid @color;
+      display: block;
+      z-index: 1;
+      transform: scaleY(@ratio)
+  }
+}
+
+.abd(@color,@position,@dw: relative) { 
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .aborder(@color,@position,@dw,@ratio:1)
+  }  
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .aborder(@color,@position,@dw,@ratio:0.5)
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    .aborder(@color,@position,@dw,@ratio:0.33)
+  }
+}
